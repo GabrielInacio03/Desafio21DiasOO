@@ -7,25 +7,18 @@ namespace Desafio21DiasOO
     {
         static void Main(string[] args)
         {
-            Pessoa gabriel = new Pessoa();
-            gabriel.Id = 1;
-            gabriel.Nome = "Gabriel";
-            gabriel.Endereco = "Rua123";
+            //receitas
+            var chocolateBolo = new Receita("Bolo de Chocolate", "Grande", 2.0, 9.99);
+            var pave = new Receita("Pave", "PEQUENO", 0.5, 5.00);
+            var carneDePanela = new Receita("Carne de Panela", "MEDIO", 3.0, 19.99);
 
-            Pessoa maria = new Pessoa();
-            maria.Id = 2;
-            maria.Nome = "Maria";
-            maria.Endereco = "Rua123";
-
-            Pessoa joao = new Pessoa();
-            joao.Id = 3;
-            joao.Nome = "João";
-            joao.Endereco = "Rua123";
-
-            List<Pessoa> pessoas = new List<Pessoa>();
-            pessoas.Add(gabriel);
-            pessoas.Add(maria);
-            pessoas.Add(joao); 
+            //exibindo objetos
+            Console.WriteLine(chocolateBolo.ToString());
+            Console.WriteLine();
+            Console.WriteLine(pave.ToString());
+            Console.WriteLine();
+            Console.WriteLine(carneDePanela.ToString());
+            Console.WriteLine();
         }
     }
 }
